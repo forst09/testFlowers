@@ -105,7 +105,6 @@ body {
 
 .main {
     padding-top: 45px;
-    padding-bottom: 100px;
 }
 
 .main__row {
@@ -194,4 +193,79 @@ body {
 
 .main-socials__link:hover path {
     fill: #B8926B;
+}
+
+.steps {
+    padding-top: 86px;
+    padding-bottom: 24px;
+}
+
+.steps__title {
+    position: relative;
+    margin-bottom: 77px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.steps__title::before {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    background-color: #D8BFA9;
+    width: 69px;
+    top: -5px;
+}
+
+.steps__row {
+    justify-content: space-between;
+}
+
+.steps__item {
+    position: relative;
+    max-width: 176px;
+}
+
+.steps__item:nth-of-type(2n+1)::after,
+.steps__item:nth-of-type(2n)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 146px;
+    height: 33px;
+    background-repeat: no-repeat;
+}
+
+.steps__item:nth-of-type(2n+1)::after {
+    background-image: url("img/top-line.svg");
+    top: -5%;
+    right: -29%;
+}
+
+.steps__item:nth-of-type(2n)::after {
+    background-image: url("img/bottom-line.svg");
+    top: 20%;
+    right: -30%;
+    background-size: contain;
+}
+
+.steps__item:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.steps__item-image {
+    margin-left: 9px;
+}
+
+.steps__item-title {
+    margin-top: 58px;
+    margin-bottom: 27px;
+    font-size: 23px;
+    line-height: 20px;
+}
+
+.steps__title-desc {
+    font-family: 'Lato-ExtraLight', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 176px;
 }
