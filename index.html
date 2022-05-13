@@ -16,14 +16,14 @@
 <body>
     <header class="header container">
         <div class="row header__row">
-            <div class="header__menu-mobile-icon col-md-4"><svg width="32" height="18" viewBox="0 0 32 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+            <div class="header__menu-mobile-icon col-md-4 col-sm-4 col-4"><svg class="header__menu-mobile-icon-svg"
+                    width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1H31M1 9H16H31M1 17H31" stroke="#B8926B" stroke-width="2" stroke-linecap="round" />
                 </svg></div>
             <div class="header__menu-mobile">
                 <div class="header__menu-mobile-content">
-                    <a href="#" class="header__menu-mobile-close"><svg width="18" height="18" viewBox="0 0 18 18"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="header__menu-mobile-close"><svg class="header__menu-mobile-close-svg" width="18"
+                            height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L17 17M1 17L17 1" stroke="#F6F6F5" stroke-width="1.5" stroke-linecap="round" />
                         </svg>
                     </a>
@@ -43,28 +43,29 @@
                     </nav>
                     <div class="header__menu-mobile-socials">
                         <a href="#" class="header__menu-mobile-socials-link">
-                            <svg class="header__menu-mobile-svg" width="17" height="14" viewBox="0 0 17 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="header__menu-mobile-svg header__menu-mobile-twitter" width="17" height="14"
+                                viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.0235156 12.3286C1.89133 12.4965 3.57438 12.0262 5.10625 10.8773C3.50383 10.7362 2.43219 9.9367 1.83422 8.43842C2.35828 8.50225 2.84875 8.51905 3.36946 8.37795C1.64274 7.84045 0.722266 6.7117 0.597969 4.89092C1.11531 5.1328 1.60242 5.30749 2.17688 5.3142C1.15227 4.54491 0.628204 3.54717 0.64836 2.29077C0.658438 1.71295 0.812969 1.16874 1.11867 0.654751C3.01672 2.8753 5.39852 4.10483 8.33125 4.30975C8.31446 4.18209 8.30438 4.08131 8.29094 3.97717C8.04907 2.11608 9.25844 0.422954 11.1061 0.0702201C12.2651 -0.151499 13.2897 0.154205 14.1564 0.953736C14.2908 1.07467 14.405 1.10155 14.573 1.05788C15.2482 0.886548 15.8899 0.637954 16.5113 0.302017C16.2728 1.08811 15.7824 1.67936 15.1172 2.17655C15.2684 2.14967 15.4229 2.12952 15.5741 2.09928C15.732 2.06569 15.8899 2.02874 16.0477 1.98506C16.1989 1.94475 16.3467 1.89772 16.4945 1.84733C16.6457 1.79694 16.7969 1.73983 16.9749 1.70959C16.8876 1.83053 16.8036 1.95819 16.7095 2.07577C16.3199 2.56959 15.8697 3.00295 15.3759 3.38928C15.3255 3.42959 15.2818 3.51694 15.2852 3.57741C15.312 4.76998 15.1441 5.93233 14.7577 7.06108C13.9985 9.28498 12.6749 11.0856 10.6895 12.3722C9.7086 13.0072 8.63696 13.4237 7.49141 13.6656C6.35594 13.9041 5.21375 13.9478 4.06821 13.8134C2.9193 13.679 1.8275 13.3397 0.799532 12.809C0.527422 12.6712 0.265391 12.5167 0 12.3689C0.0100781 12.3555 0.0167969 12.342 0.0235156 12.3286Z"
                                     fill="#F6F6F5" />
                             </svg></a>
-                        <a href="#" class="header__menu-mobile-socials-link"><svg class="header__menu-mobile-svg"
-                                width="14" height="18" viewBox="0 0 14 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <a href="#" class="header__menu-mobile-socials-link"><svg
+                                class="header__menu-mobile-svg header__menu-mobile-pinterest" width="14" height="18"
+                                viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.34252 0.400203C2.72782 0.400203 0.400879 3.7264 0.400879 6.50007C0.400879 8.17951 1.03341 9.6737 2.38995 10.2306C2.61232 10.3219 2.81168 10.2334 2.87616 9.98613C2.92102 9.81477 3.02724 9.38243 3.0746 9.20253C3.13962 8.9576 3.11441 8.87168 2.93493 8.65825C2.54378 8.19437 2.29378 7.59389 2.29378 6.74336C2.29378 4.27564 4.13033 2.06661 7.07601 2.06661C9.68432 2.06661 11.1174 3.66884 11.1174 5.80864C11.1174 8.62412 9.87795 11.0004 8.03805 11.0004C7.02183 11.0004 6.26126 10.1555 6.50502 9.11947C6.79704 7.8824 7.36259 6.54745 7.36259 5.65449C7.36259 4.85526 6.93582 4.18859 6.05254 4.18859C5.0138 4.18859 4.17934 5.26891 4.17934 6.71604C4.17934 7.63771 4.48918 8.26114 4.48918 8.26114C4.48918 8.26114 3.42622 12.7891 3.23984 13.582C2.86868 15.1612 3.18398 17.0973 3.21078 17.2928C3.22638 17.4086 3.37451 17.4362 3.44149 17.3486C3.53733 17.2228 4.77456 15.6874 5.19513 14.1532C5.31415 13.7188 5.87844 11.4691 5.87844 11.4691C6.21585 12.1163 7.20214 12.6863 8.25097 12.6863C11.3734 12.6863 13.4918 9.82457 13.4918 5.99411C13.4917 3.0976 11.0514 0.400146 7.34252 0.400146V0.400203Z"
                                     fill="#F6F6F5" />
                             </svg></a>
-                        <a href="#" class="header__menu-mobile-socials-link"><svg class="header__menu-mobile-svg"
-                                width="18" height="12" viewBox="0 0 18 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <a href="#" class="header__menu-mobile-socials-link"><svg
+                                class="header__menu-mobile-svg header__menu-mobile-youtube" width="18" height="12"
+                                viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.20728 11.9469C7.29703 11.8867 5.48045 11.8398 3.66387 11.7696C3.27245 11.7529 2.87435 11.6926 2.49297 11.6023C1.77704 11.435 1.28191 11.0035 1.02766 10.2976C0.823588 9.72886 0.749989 9.14341 0.696461 8.54792C0.579371 7.14952 0.579371 5.75112 0.636243 4.35273C0.669698 3.5632 0.689771 2.76698 0.900534 2.00088C1.02766 1.54255 1.18155 1.09426 1.5529 0.763062C1.94431 0.41179 2.40264 0.201027 2.92453 0.177609C4.35638 0.107355 5.78488 0.0203732 7.21674 0.00699145C9.14371 -0.0130812 11.074 0.0136824 13.001 0.0504824C13.834 0.0672096 14.6737 0.1107 15.5001 0.217755C16.2561 0.318118 16.8215 0.739644 17.1226 1.47564C17.3534 2.04102 17.4404 2.63317 17.4906 3.23535C17.6211 4.74414 17.6244 6.25294 17.5508 7.76174C17.514 8.52784 17.4772 9.2973 17.2598 10.0433C17.0122 10.8998 16.487 11.4651 15.6105 11.6592C15.2692 11.7328 14.9146 11.7595 14.5667 11.7729C12.7468 11.8365 10.9302 11.8934 9.20728 11.9469ZM7.35725 8.14312C8.88277 7.35359 10.3916 6.57076 11.9305 5.7712C10.3949 4.96829 8.88611 4.18211 7.35725 3.38255C7.35725 4.97833 7.35725 6.54734 7.35725 8.14312Z"
                                     fill="#F6F6F5" />
                             </svg></a>
-                        <a href="#" class="header__menu-mobile-socials-link"><svg class="header__menu-mobile-svg"
-                                width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#" class="header__menu-mobile-socials-link"><svg
+                                class="header__menu-mobile-svg header__menu-mobile-facebook" width="8" height="18"
+                                viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M1.71453 3.69582C1.71453 4.1226 1.71453 6.0352 1.71453 6.0352H-0.000488281V8.89619H1.71453V17.4001H5.23545V8.89619H7.59854C7.59854 8.89619 7.81983 7.52497 7.92652 6.02334C7.61829 6.02334 5.2473 6.02334 5.2473 6.02334C5.2473 6.02334 5.2473 4.3597 5.2473 4.06728C5.2473 3.77486 5.63061 3.37969 6.00997 3.37969C6.38933 3.37969 7.18757 3.37969 7.93048 3.37969C7.93048 2.98848 7.93048 1.64492 7.93048 0.400146C6.94256 0.400146 5.81634 0.400146 5.32239 0.400146C1.62759 0.404098 1.71453 3.26904 1.71453 3.69582Z"
                                     fill="#F6F6F5" />
@@ -72,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header__logo col-lg-2 col-md-4">
+            <div class="header__logo col-lg-2 col-md-4 col-sm-4 col-4">
                 <a href="#"><img src="img/logo.svg" alt="" class="header__logo-img"></a>
             </div>
             <nav class="header__nav col-lg-8">
@@ -83,8 +84,15 @@
                     <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="header__phone col-lg-2 col-md-4">
+            <div class="header__phone col-lg-2 col-md-4 col-sm-4 col-4">
                 <a class="header__phone-link" href="tel:+79602102233">+7 (960) 210-22-33</a>
+                <a href="tel:+79602102233" class="header__mobile-phone-link"><svg width="21" height="21"
+                        viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.4493 15.4119L17.5125 12.4813C16.4637 11.4346 14.6807 11.8533 14.2611 13.2139C13.9465 14.1559 12.8976 14.6793 11.9536 14.4699C9.85594 13.9466 7.02405 11.2253 6.49962 9.02732C6.18497 8.0853 6.81428 7.03865 7.75824 6.7247C9.12175 6.30604 9.54129 4.52674 8.49244 3.4801L5.55566 0.549489C4.71658 -0.183163 3.45796 -0.183163 2.72376 0.549489L0.730951 2.53812C-1.26186 4.63141 0.94072 10.1786 5.87031 15.0979C10.7999 20.0171 16.3588 22.3198 18.4565 20.2264L20.4493 18.2378C21.1836 17.4005 21.1836 16.1445 20.4493 15.4119Z"
+                            fill="#B8926B" />
+                    </svg>
+                </a>
             </div>
         </div>
     </header>
@@ -132,27 +140,27 @@
         <h2 class="steps__title">5 шагов к авторскому букету</h2>
         <div class="container">
             <div class="row steps__row">
-                <div class="col col-md-4 steps__item">
+                <div class="col col-md-4 col-sm-12 steps__item">
                     <img class="steps__item-image" src="img/order.png" alt="">
                     <p class="steps__item-title">Заказ</p>
                     <p class="steps__title-desc">Выберите букет и оформите заказ</p>
                 </div>
-                <div class="col col-md-4 steps__item">
+                <div class="col col-md-4 col-sm-12 steps__item">
                     <img class="steps__item-image" src="img/details.png" alt="">
                     <p class="steps__item-title">Детали</p>
                     <p class="steps__title-desc">Мы вам перезвоним в течение 10 минут и уточним детали</p>
                 </div>
-                <div class="col col-md-4 steps__item">
+                <div class="col col-md-4 col-sm-12 steps__item">
                     <img class="steps__item-image" src="img/payment.png" alt="">
                     <p class="steps__item-title">Оплата</p>
                     <p class="steps__title-desc">Оплатите онлайн или при получении</p>
                 </div>
-                <div class="col col-md-6 steps__item">
+                <div class="col col-md-6 col-sm-12 steps__item">
                     <img class="steps__item-image" src="img/packing.png" alt="">
                     <p class="steps__item-title">Сборка и упаковка</p>
                     <p class="steps__title-desc">Собререм букет с учетом ваших пожеланий и упакуем для доставки</p>
                 </div>
-                <div class="col col-md-6 steps__item">
+                <div class="col col-md-6 col-sm-12 steps__item">
                     <img class="steps__item-image" src="img/delivery.png" alt="">
                     <p class="steps__item-title">Доставка</p>
                     <p class="steps__title-desc">Курьер позвонит за час и доставит букет во время</p>
