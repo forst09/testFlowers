@@ -15,9 +15,6 @@ function validateForm() {
     }
 }
 
-
-
-
 const popupLinks = document.querySelectorAll('.popup-link');
 
 if (popupLinks.length > 0) {
@@ -56,3 +53,15 @@ function popupOpen(curentPopup) {
 function popupClose(curentPopup) {
     curentPopup.classList.remove('open');
 }
+
+
+let menuBtn = document.querySelector('.header__menu-mobile-icon');
+let menu = document.querySelector('.header__menu-mobile');
+menuBtn.addEventListener('click', function () {
+    menu.classList.add('active');
+})
+
+let menuCloseBtn = document.querySelector('.header__menu-mobile-close');
+menuCloseBtn.addEventListener('click', function () {
+    menu.classList.remove('active');
+})
